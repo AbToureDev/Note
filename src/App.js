@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import {data} from "./data";
+import CheckBox from "./components/forms/checkBox";
+import Input from "./components/forms/input";
+import {useEffect, useState} from "react";
+import Note from "./components/note";
+// import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+        <Note/>
     </div>
   );
 }
+
 
 export default App;
